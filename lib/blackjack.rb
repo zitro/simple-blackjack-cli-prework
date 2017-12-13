@@ -41,9 +41,9 @@ def hit?(card_total)
   prompt_user
   answer = get_user_input
 if answer == ""
-    invalid_command
+    return invalid_command
   elsif answer == "h"
-    card_total += deal_card
+    return card_total += deal_card
   elsif answer == "s"
      return card_total
 end
@@ -61,4 +61,11 @@ end
 
 def runner
   # code runner here
+  welcome
+  initial_round
+  get_user_input
+  hit?
+  if get_user_input == invalid_command
+    
+  end
 end
