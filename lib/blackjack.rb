@@ -63,7 +63,6 @@ def runner
   # code runner here
   welcome
   initial_count = initial_round
-  display_card_total(initial_count)
 while initial_count < 21
   initial_count = hit?(initial_count)
   display_card_total(initial_count)
