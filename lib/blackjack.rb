@@ -63,9 +63,8 @@ def runner
   # code runner here
   welcome
   initial_round
-  get_user_input
+while initial_round < 21
   hit?
-  if get_user_input == invalid_command
-    
-  end
+end
+  end_game
 end
