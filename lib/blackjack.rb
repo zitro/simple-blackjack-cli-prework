@@ -39,6 +39,7 @@ end
 def hit?(card_total)
   # code hit? here
   prompt_user
+  answer = get_user_input
 if get_user_input == ""
     "Please enter a valid command"
     prompt_user
