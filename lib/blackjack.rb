@@ -44,10 +44,9 @@ if answer == ""
     invalid_command
   elsif answer == "h"
     card_total += deal_card
-    card_total
   elsif answer == "s"
      card_total
-end
+   end
 end
 
 def invalid_command
@@ -64,6 +63,7 @@ def runner
   # code runner here
   welcome
   initial_round
+  display_card_total
   hit?
 while initial_round < 21
   hit?
